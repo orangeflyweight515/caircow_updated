@@ -46,7 +46,7 @@ const Body = styled.div`
     border-width:0px;
 }
 .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
-    border:none;
+    border:none !important;
 }
 #check {
     float:left; 
