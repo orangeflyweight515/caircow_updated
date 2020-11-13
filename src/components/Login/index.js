@@ -9,6 +9,7 @@ const Body = styled.div`
     padding: 0.5rem;
     background-color: white;
   }
+ 
   hr {
     margin: 40px 0px;
   }
@@ -162,7 +163,7 @@ export default class Login extends Component {
             <form id="box" action="password.php">
               <div id="login">Log in to Get to work</div>
               <input id="email" type="text" placeholder="username or email" />
-              <Link to="/passwordform">
+              <Link to="/password">
                 <input id="submit" type="submit" value="Continue" />
               </Link>
               <hr />
