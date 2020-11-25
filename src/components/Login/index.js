@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 //import '../../styles/login.css';
+import Loginhooks from './Loginhooks';
+import Flogin from './Flogin';
 import styled from "styled-components";
 import imageURL from "../../images/logo.jpg";
 import Grid from "@material-ui/core/Grid";
+import Linklogin from "./Linklogin";
+
+
 const Body = styled.div`
   && {
     padding: 0.5rem;
@@ -109,7 +114,7 @@ const Body = styled.div`
     float: left;
     margin-left: 30px;
   }
-  #apple,
+  #facebook,
   #Linkedin {
     margin-top: 10px;
     margin-left: 70px;
@@ -167,16 +172,16 @@ export default class Login extends Component {
                 <input id="submit" type="submit" value="Continue" />
               </Link>
               <hr />
-              <button id="gmail">
-                <i class="fa fa-google fa-fw"></i>Sign In with Google
-              </button>
-              <button id="apple">
-                <i class="fa fa-apple" aria-hidden="true"></i>Sign In with Apple
-              </button>
-              <button id="Linkedin">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>Sign In
-                with Linkedin
-              </button>
+
+              <div id="gmail">
+                <Loginhooks />
+              </div>
+              <div id="facebook">
+                <Flogin />
+              </div>
+              <div id="Linkedin">
+                <Linklogin />
+              </div>
             </form>
           </Grid>
         </Grid>
